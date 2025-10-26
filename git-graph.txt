@@ -1,12 +1,26 @@
-* c56b3dc (HEAD -> main, origin/main) docs: Add changelog
-* 6b7f0f6 Fetched and pulled updates, managed feature branches with stash, cherry-picked and rebased commits, practiced reset and revert, and created annotated tags for releases.
-| * 4f3ed22 (feature/another-feature) Fetched and pulled updates from the instructor’s repo, created feature branches and stashed work as needed, cherry-picked specific commits into main, rebased branches onto updated main, and practiced reset and revert to handle bad commits and recover lost work.
-| * 8e92a9d Fetched and pulled updates from the instructor’s repo, created feature branches and stashed work as needed, cherry-picked specific commits into main, rebased branches onto updated main, and practiced reset and revert to handle bad commits and recover lost work.
-| * ddde901 (origin/feature/another-feature) feat: Add test feature
-|/  
-* fd462ec (tag: v1.1.0, tag: v1.0.0) docs: Update README
-* 403aa23 docs: Add FAQ section
-| * 78b3112 (origin/feature/new-feature, feature/new-feature) feat: Add new feature
+* 77de66e (HEAD -> main, origin/main) docs: Add changelog
+* 45264c0 docs: Update README
+* de2b34d Applied a specific commit from  onto  using .
+* 35d68d2 docs: Add FAQ section
+| * ff5ed33 (origin/feature/new-feature, feature/new-feature) feat: Add new feature
+| * 78b3112 feat: Add new feature
+| | * 23f492d (refs/stash) On main: WIP: New feature development
+| |/| 
+|/| | 
+| | * 6bb808c index on main: df1abc3 addded GIT_JOURNEY.md
+| |/  
+|/|   
+* | df1abc3 addded GIT_JOURNEY.md
+* | 4caaf3b docs: Add final project artifacts
+* | c56b3dc docs: Add changelog
+* | 6b7f0f6 Fetched and pulled updates, managed feature branches with stash, cherry-picked and rebased commits, practiced reset and revert, and created annotated tags for releases.
+| | * 4f3ed22 (origin/feature/another-feature, feature/another-feature) Fetched and pulled updates from the instructor’s repo, created feature branches and stashed work as needed, cherry-picked specific commits into main, rebased branches onto updated main, and practiced reset and revert to handle bad commits and recover lost work.
+| | * 8e92a9d Fetched and pulled updates from the instructor’s repo, created feature branches and stashed work as needed, cherry-picked specific commits into main, rebased branches onto updated main, and practiced reset and revert to handle bad commits and recover lost work.
+| | * ddde901 feat: Add test feature
+| |/  
+|/|   
+* | fd462ec (tag: v1.1.0, tag: v1.0.0) docs: Update README
+* | 403aa23 docs: Add FAQ section
 |/  
 *   2ec383d Merge: Resolve all conflicts between main and conflict simulator.
 |\  
