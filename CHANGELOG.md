@@ -1,7 +1,10 @@
-
-**4.6: Git Tag**
-**Date:** 26-10-2025 | **Time:** 17:50
-- Checked out main branch
-- Created annotated tags v1.0.0 and v1.1.0 for releases
-- Pushed tags to the remote repository
-- Created 2+ tags
+- 6b7f0f6: Fetched and pulled updates, managed feature branches with stash, cherry-picked and rebased commits, practiced reset and revert, and created annotated tags for releases. (Manoj_Doddi, 28 minutes ago)
+- fd462ec: docs: Update README (Manoj_Doddi, 53 minutes ago)
+- 403aa23: docs: Add FAQ section (Manoj_Doddi, 63 minutes ago)
+- 2ec383d: Merge: Resolve all conflicts between main and conflict simulator. (Manoj_Doddi, 78 minutes ago)
+- 889aafc: merge: Resolve all conflicts between main and dev branches (Manoj_Doddi, 3 hours ago)
+- d3dd9b2: updating conflict-simulator (Hanu Gupta, 3 days ago)
+- 02011a5: updating dev (Hanu Gupta, 3 days ago)
+- 0312c6f: updating main (Hanu Gupta, 3 days ago)
+- fadfd24: Revise README for DevOps Simulator project (Hanu Gupta, 3 days ago)
+- ae630eb: Initial commit (Hanu Gupta, 3 days ago)
