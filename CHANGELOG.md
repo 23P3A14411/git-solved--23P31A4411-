@@ -28,3 +28,12 @@
 - Rebased the feature branch onto the updated main branch
 - Resolved any conflicts and force-pushed the updated branch
 - Used git rebase 1 time
+
+**4.5: Git Reset & Revert**
+**Date:** 26-10-2025 | **Time:** 17:43
+- Made an intentional bad commit to simulate an error
+- Reverted the bad commit using git revert
+- Practiced different types of resets: soft, mixed, and hard
+- Used git reflog to view history and recover lost commits
+- Cherry-picked the recovered commit to restore work
+- Used git reset 3 times, git revert 1 time
