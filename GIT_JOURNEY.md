@@ -82,47 +82,50 @@ merge conflicts across multiple branches using proper Git workflows.
 
 ### Merge 2: main + conflict-simulator (6 files)
 
-#### Conflict 1: config/app-config.yaml
-- **Issue**: Production used port 8080, development used 3000 with extra dev-specific settings
-- **Resolution**: Unified configuration with production as default; development settings optional via environment variables
-- **Strategy**: Keep production as primary, enable development features conditionally
+#### Conflict 1: config/feature-flags.yaml
+- **Issue**: Experimental features were enabled by default in simulator branch
+- **Resolution**: Kept production flags active; moved experimental ones under commented section
+- **Strategy**: Maintain stable production config; add experimental flags as optional
 - **Difficulty**: Medium
 - **Time**: 15 minutes
 
-#### Conflict 2: config/database-config.json
-- **Issue**: Different database hosts, SSL modes, and backup settings
-- **Resolution**: Created separate profiles for production and development
-- **Strategy**: Restructured JSON to support both environments
+#### Conflict 2: config/app-config.yaml
+- **Issue**: Simulator used test endpoints and custom ports
+- **Resolution**: Retained production endpoints; added simulator ports behind environment check
+- **Strategy**: Use environment variable (`SIM_MODE`) to toggle between production and simulator
 - **Difficulty**: Medium
 - **Time**: 10 minutes
 
-#### Conflict 3: scripts/deploy.sh
-- **Issue**: Different deployment strategies (production vs docker-compose)
-- **Resolution**: Added conditional logic to handle both environments dynamically
-- **Strategy**: Single script manages production and development based on DEPLOY_ENV
+#### Conflict 3: src/ai/optimizer.js
+- **Issue**: Simulator introduced AI optimization module conflicting with stable load balancer
+- **Resolution**: Integrated AI module as an optional import, disabled by default
+- **Strategy**: Enable AI optimization only when `FEATURE_AI_OPTIMIZER=true`
+- **Difficulty**: Hard
+- **Time**: 25 minutes
+
+#### Conflict 4: scripts/deploy.sh
+- **Issue**: Simulator used a local test deployment, production used CI/CD
+- **Resolution**: Added conditional logic for deployment type
+- **Strategy**: Handle both simulator and production environments dynamically
 - **Difficulty**: Hard
 - **Time**: 20 minutes
 
-#### Conflict 4: scripts/monitor.js
-- **Issue**: Different monitoring intervals, log formats, and debug options
-- **Resolution**: Combined features using environment-based configuration object
-- **Strategy**: Used process.env.NODE_ENV to determine behavior
-- **Difficulty**: Medium
-- **Time**: 15 minutes
-
-#### Conflict 5: docs/architecture.md
-- **Issue**: Different architectural descriptions for production and development
-- **Resolution**: Merged both descriptions into a comprehensive document
-- **Strategy**: Created separate sections for each environment
+#### Conflict 5: docs/experimental-features.md
+- **Issue**: Simulator branch added new experimental documentation not aligned with production
+- **Resolution**: Combined both docs with a clear "Experimental Features" section
+- **Strategy**: Mark experimental features as “Not production-ready”
 - **Difficulty**: Easy
 - **Time**: 10 minutes
 
 #### Conflict 6: README.md
-- **Issue**: Different feature lists and version numbers
-- **Resolution**: Combined all features with clear environment labels
-- **Strategy**: Organized features by category for production and development
+- **Issue**: Simulator added new badges and feature examples differing from main
+- **Resolution**: Merged all content; separated stable and experimental features
+- **Strategy**: Organized README into “Stable” and “Experimental” categories
 - **Difficulty**: Easy
 - **Time**: 10 minutes
+
+
+
 
 
 ## Most Challenging Parts
